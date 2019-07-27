@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+.w3-third img:hover{opacity: 1}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+  <h3 class="w3-padding-64 w3-center"><b>RIP<br><b>LIL<br>PEEP</b></h3>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">PORTFOLIO</a> 
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a> 
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">BENZ TRUCK</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">SOME NAME</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Push down content on small screens --> 
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Photo grid -->
+  <div class="w3-row">
+    <div class="w3-third">
+      <img src="lilpeep1.jpeg" style="width:100%" onclick="onClick(this)" alt="All">
+      <img src="lilpeep2.jpg" style="width:100%" onclick="onClick(this)" alt="I">
+      <img src="lilpeep11.jpg" style="width:100%" onclick="onClick(this)" alt="Ever">
+    </div>
+
+    <div class="w3-third">
+      <img src="lilpeep4.jpeg" style="width:100%" onclick="onClick(this)" alt="Wanted">
+      <img src="lilpeep5.jpg" style="width:100%" onclick="onClick(this)" alt="Was">
+      <img src="lilpeep6.jpg" style="width:100%" onclick="onClick(this)" alt="A">
+    </div>
+    
+    <div class="w3-third">
+      <img src="lilpeep12.jpg" style="width:100%" onclick="onClick(this)" alt="Benz">
+      <img src="lilpeep6.png" style="width:100%" onclick="onClick(this)" alt="&">
+      <img src="lilpeep10.jpg" style="width:100%" onclick="onClick(this)" alt="A Bad Bitch">
+    </div>
+  </div>
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- About section -->
+  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+    <h4><b>November 1, 1996 – November 15, 2017</b></h4>
+    
+    <div class="w3-content w3-justify" style="max-width:600px">
+      <h4>Gustav Elijah Åhr </h4>
+      <p>Known professionally as Lil Peep (often stylized as LiL PEEP), was an American rapper, singer, songwriter and model.He was known for helping pioneer an emo revival style of hip hop and rock music.
+        Lil Peep was a frequent user of drugs due to his mental health issues, which ultimately caused his death on November 15, 2017. The Pima County Office of the Medical Examiner certified the cause of death to be an accidental fentanyl–alprazolam overdose, the latter of which was branded as Xanax.</p>
+   
+ <div class="w3-half w3-margin-bottom">
+     
+    <hr class="w3-opacity">
+      
+      <h4 class="w3-padding-16">Favorite Songs</h4>
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <!-- <div class="w3-half w3-margin-bottom"> -->
+                <li>lil peep - The Brightside</li>
+                <li>lil peep - Save That Shit</li>
+                <li>lil peep ft. Lil Tracy - Cobain</li>
+                <li> lil Peep - Problems </li>
+
+        </div>
+        
+        <div class="w3-half">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact section -->
+  <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+    <div class="w3-content" style="max-width:600px">
+      <h4 class="w3-center"><b>lil peep - benz truck (prod. smokeasac)</b></h4>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3rkJ3L5Ce80" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h4><a href="https://www.mbusa.com/en/home?sd_campaign_type=Search&sd_digadprov=Resolution&sd_campaign=ZZBrand%7CCorp%7CMisc%7CGeneral%7CExact&sd_channel=GOOGLE&sd_adid=General&sd_digadkeyword=mercedes+benz&gclid=Cj0KCQjwhPfkBRD0ARIsAAcYycEnYxTYfUqoGY4w3s-T4ZFQo1dOmo65Yd1IWzTilPX8nQn_8t8A-08aAk3sEALw_wcB&gclsrc=aw.ds">Mercedes-Benz</a></h4>
+</div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-grey">  
+    <div class="w3-row-padding">
+      <div class="w3-third">
+       
+      </div>
+
+     
+  
+  <div class="w3-black w3-center w3-padding-24">Design: Arashi Walker <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+
+</body>
+</html>
