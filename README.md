@@ -14,7 +14,7 @@
 
 ## Support and contact details
 
-_Arashi walker - phone (123)123-1234 - email arashiwalker@gmail.com_
+_Arashi walker - phone (123)123-1234 -  email arashiwalker@gmail.com_
 
 ## Technologies Used
 
